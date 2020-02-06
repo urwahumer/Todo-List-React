@@ -15,7 +15,7 @@ class ListItem extends Component {
                   onClick={() => this.props.onClick(l.id, l.title)}
                 ></input>
               </span>
-              <span id={l.title} className="pr-5">
+              <span id={l.title} className="mr-3">
                 {l.title}
               </span>
 
