@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Navbar from "../component/header.jsx";
-import Footer from "../component/footer.jsx";
 
+import Footer from "../component/footer.jsx";
+import Example from "../component/HeaderNav.jsx";
 import "../component/main.css";
 import img1 from "../img1.jpeg";
 class ContactUs extends Component {
@@ -10,7 +10,7 @@ class ContactUs extends Component {
     return (
       <div className="body">
         <div className="header">
-          <Navbar />
+          <Example />
         </div>
 
         <div class="content">
@@ -23,7 +23,7 @@ class ContactUs extends Component {
               </div>
               <div className="row p-0">
                 <div className="col-sm-12 p-0">
-                  <img className="img" src={img1}></img>
+                  <img className="img" src={img1} alt={this.props.alt}></img>
                 </div>
               </div>
             </div>

@@ -6,8 +6,8 @@ class Cards extends Component {
   render() {
     return (
       <div className="container">
-        <div className="row ">
-          <div className="col-md-3 col-12 mb-3">
+        <div className="row mt-5 ">
+          <div className="col-md-3 col-12 mb-3 ">
             <div className="card ">
               <img className="card-img-top" src={bg} alt="Card image cap"></img>
               <div className="card-body">

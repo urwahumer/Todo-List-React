@@ -3,26 +3,30 @@ import "./main.css";
 class ListItem extends Component {
   render() {
     return (
-      <div className="pb-5">
+      <div className=" ">
         <ul className="ul" id="list">
           {this.props.lists.map(l => (
             <li>
-              <span>
-                <input
-                  type="checkbox"
-                  className="mr-3 chkbox1 "
-                  id={l.id}
-                  onClick={() => this.props.onClick(l.id, l.title)}
-                ></input>
+              <span className="container-fluid">
+                <span className="row">
+                  <span className="col-1">
+                    <input
+                      type="checkbox"
+                      className=" "
+                      onClick={() => this.props.onClick(l.id)}
+                    ></input>
+                  </span>
+                  <span className="col-10" id={l.id}>
+                    {l.title}
+                  </span>
+                  <span className="col-1">
+                    <i
+                      onClick={this.props.onDelete(l)}
+                      className="fas fa-trash-alt   right"
+                    ></i>
+                  </span>
+                </span>
               </span>
-              <span id={l.title} className="mr-3">
-                {l.title}
-              </span>
-
-              <i
-                onClick={this.props.onDelete(l)}
-                className="fas fa-trash-alt  styling right"
-              ></i>
             </li>
           ))}
         </ul>

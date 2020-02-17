@@ -3,17 +3,17 @@ import InputField from "./inputField";
 import ListItem from "./List";
 import "./main.css";
 class Todolist1 extends Component {
-  check = (a, text) => {
-    const el = document.getElementById(text);
+  check = a => {
+    const el = document.getElementById(a);
     if (el.style.textDecoration === "line-through") {
-      document.getElementById(text).style.textDecoration = "none";
-      document.getElementById(text).style.color = "black";
+      document.getElementById(a).style.textDecoration = "none";
+      document.getElementById(a).style.color = "black";
     } else {
-      document.getElementById(text).style.textDecoration = "line-through";
-      document.getElementById(text).style.color = "#e17055";
+      document.getElementById(a).style.textDecoration = "line-through";
+      document.getElementById(a).style.color = "#e17055";
     }
 
-    console.log(a, text);
+    console.log(a);
 
     // const cb = document.getElementsByName(tb);
     // if (cb.checked == true) {

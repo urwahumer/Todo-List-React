@@ -5,6 +5,7 @@ import Home from "./pages/homePage.js";
 import AboutUS from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 import Todo from "./pages/Todo-List";
+import Forms from "./pages/SignupPage";
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
           <Route exact path="/ContactUs" component={ContactUs} />
           <Route exact path="/Todo-List" component={Todo} />
         </div>
+      </Switch>
+      <Switch>
+        <Route path="/SignupPage" component={Forms}></Route>
       </Switch>
     </Router>
   );
